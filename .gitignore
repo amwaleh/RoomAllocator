@@ -1,0 +1,4 @@
+# Ignore C# and .NET files and folders
+
+bin/
+obj/
