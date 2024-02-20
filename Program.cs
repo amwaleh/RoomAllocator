@@ -45,3 +45,4 @@ foreach (Tenant t in tenants)
     Room randomRoom = availableRooms[randomIndex];
     roomOccupancy.AddTenantToRoom(randomRoom, t);
 }
+roomOccupancy.GetRoomOccupancy("101");
