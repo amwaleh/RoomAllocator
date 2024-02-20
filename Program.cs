@@ -39,8 +39,7 @@ Random random = new Random();
 foreach (Tenant t in tenants)
 {
     int randomIndex = random.Next(availableRooms.Count);
-    // Task check if room is full
-    // find empty room and add tenant
+    
 
     Room randomRoom = availableRooms[randomIndex];
     roomOccupancy.AddTenantToRoom(randomRoom, t);
