@@ -8,6 +8,7 @@ namespace RoomManagement.RoomOccupancy
         bool IsRoomFull(Room room);
         void AddTenantToRoom(Room room, Tenant tenant);
         void AddRoom(Room room);
-        void GetRoomOccupancy(string roomId);
+        void GetRoomOccupancyInfo(string roomId);
+        string FindTenant(string tenantName);
     }
 }

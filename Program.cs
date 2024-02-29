@@ -39,9 +39,12 @@ Random random = new Random();
 foreach (Tenant t in tenants)
 {
     int randomIndex = random.Next(availableRooms.Count);
-    
+    Console.WriteLine($"Adding {t.TenantName} to room {availableRooms[randomIndex].RoomId}");
 
     Room randomRoom = availableRooms[randomIndex];
     roomOccupancy.AddTenantToRoom(randomRoom, t);
 }
-roomOccupancy.GetRoomOccupancy("101");
+//room occupancy info
+roomOccupancy.GetRoomOccupancyInfo("101");
+
+Console.WriteLine("Find Tenant John: " + roomOccupancy.FindTenant("John"));

@@ -3,12 +3,12 @@ namespace RoomManagement.TenantManagement
 
 
     public class Tenant {
-        public string TenantID {get; set;}
+        private string tenantID ;
         public string TenantName {get; set;}
 
         public Tenant( string tenantName)
         {
-            TenantID = Guid.NewGuid().ToString();
+            tenantID = Guid.NewGuid().ToString();
             TenantName = tenantName;
         }
       
